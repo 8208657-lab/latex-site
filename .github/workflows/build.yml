@@ -1,4 +1,4 @@
-name: Build LaTeX Website
+name: Build Markdown Website
 
 permissions:
   contents: write
@@ -19,9 +19,9 @@ jobs:
       - name: Install Pandoc
         run: sudo apt-get update && sudo apt-get install -y pandoc
 
-      - name: Build HTML from LaTeX (with MathJax)
+      - name: Build HTML from Markdown (with MathJax)
         run: >
-          pandoc index.tex
+          pandoc index.md
           -s
           --mathjax="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
           -o index.html
