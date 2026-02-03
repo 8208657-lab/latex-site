@@ -3,7 +3,7 @@
 作者：謝翔宇
 
 ## Introduction
-這是一個用 **Markdown + LaTeX 數學** 寫的網站。
+這是一個用Markdown寫的網站。
 
 ## Math
 $$
